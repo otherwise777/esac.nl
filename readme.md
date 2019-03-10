@@ -19,6 +19,16 @@ The following libaries and framework are used:
 - [SummerNote](http://summernote.org/)
 - [Laravel-mix (Webpack)](https://github.com/JeffreyWay/laravel-mix)
 
+## Setup for Docker
+ 1. Clone or download this project
+ 2. Download and install  [Docker](https://www.docker.com/)
+ 3. In this folder, run `docker-compose up`
+ 
+The docker compose runs 2 containers, 1 containing the database, and one php container running the website
+which also fills the database. Laraval uses the [Docker environment file](.env.docker) to run the project inside docker.
+You might notice the local version is a bit slow, that's because docker uses a volume to mount
+the project, for this reason the debug bar has been switched off to make it faster.
+
 
 ## Setting up steps
 Create an .env file from .env.example, with your local values for 
