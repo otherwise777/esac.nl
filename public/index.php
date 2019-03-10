@@ -1,5 +1,10 @@
 <?php
 /**
+ * Allowing access control to make local development possible in docker containers
+ *
+ */
+header('Access-Control-Allow-Origin: *');
+/**
  * Laravel - A PHP Framework For Web Artisans
  *
  * @package  Laravel
