@@ -60,5 +60,5 @@ When you update the server make sure you run the following commands
 
     php artisan migrate
     npm run production
-
+ 
 
